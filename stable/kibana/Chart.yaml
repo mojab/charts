@@ -3,7 +3,7 @@ name: kibana
 version: 3.2.4
 appVersion: 6.7.0
 description: Kibana is an open source data visualization plugin for Elasticsearch
-icon: https://raw.githubusercontent.com/elastic/kibana/master/src/ui/public/icons/kibana-color.svg
+icon: https://helm.elastic.co/icons/kibana.png
 keywords:
 - elasticsearch
 - kibana
@@ -12,6 +12,8 @@ maintainers:
   email: casey@monax.io
 - name: monotek
   email: monotek23@gmail.com
+- name: mojab
+  email: hello@mojab.org
 sources:
 - https://github.com/elastic/kibana
 engine: gotpl
