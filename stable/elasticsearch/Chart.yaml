@@ -2,10 +2,10 @@ apiVersion: v1
 name: elasticsearch
 home: https://www.elastic.co/products/elasticsearch
 version: 1.31.1
-appVersion: 6.8.2
+appVersion: 7.3.2
 description: Flexible and powerful open source, distributed real-time search and analytics
   engine.
-icon: https://static-www.elastic.co/assets/blteb1c97719574938d/logo-elastic-elasticsearch-lt.svg
+icon: https://helm.elastic.co/icons/elasticsearch.png
 sources:
 - https://www.elastic.co/products/elasticsearch
 - https://github.com/jetstack/elasticsearch-pet
@@ -26,3 +26,5 @@ maintainers:
   email: goonohc@gmail.com
 - name: hectorj2f
   email: hfernandez@mesosphere.com
+- name: mojab
+  email: hello@mojab.org
