@@ -322,7 +322,7 @@ outputs:
       elasticsearch {
         hosts => ["${ELASTICSEARCH_HOST}:${ELASTICSEARCH_PORT}"]
         manage_template => false
-        index => "%{[@metadata][beat]}-%{+YYYY.MM.dd}"
+        index => "%{[@metadata][source]}-%{+YYYY.MM.dd}"
       }
       # kafka {
       #   ## ref: https://www.elastic.co/guide/en/logstash/current/plugins-outputs-kafka.html
