@@ -28,10 +28,10 @@ service:
     # service.beta.kubernetes.io/aws-load-balancer-cross-zone-load-balancing-enabled: "true"
     # service.beta.kubernetes.io/aws-load-balancer-internal: "true"
   ports:
-    # syslog-udp:
-    #   port: 1514
-    #   targetPort: syslog-udp
-    #   protocol: UDP
+    lsport:
+      port: 9600
+      targetPort: lsport
+      protocol: TCP
     syslog-tcp:
       port: 1514
       targetPort: syslog-tcp
@@ -48,9 +48,9 @@ service:
     # loadBalancerSourceRanges:
     #   - 192.168.0.1
 ports:
-  # - name: syslog-udp
-  #   containerPort: 1514
-  #   protocol: UDP
+  - name: lsport
+    containerPort: 9600
+    protocol: TCP
   - name: syslog-tcp
     containerPort: 1514
     protocol: TCP
